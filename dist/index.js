@@ -24,5 +24,6 @@ app_1.default.listen(PORT, () => __awaiter(void 0, void 0, void 0, function* () 
         console.log(error);
         console.log("Unable to connect to Database");
     }
-    console.log(`Server is running on port ${process.env.port}`);
+    console.log(`Server is running on port ${PORT}`);
 }));
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTkzZWQxNzdjMjVkM2IxYTBiMjMwZmMiLCJpYXQiOjE3MDQxOTQxMDB9.xL_Mc0QaJ4PdLQJhpnl0iWZ-S-hcfsgBEWfa9tpy934
