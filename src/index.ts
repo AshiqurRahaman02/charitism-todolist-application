@@ -11,5 +11,6 @@ app.listen(PORT,async () => {
         console.log(error)
         console.log("Unable to connect to Database")
     }
-    console.log(`Server is running on port ${process.env.port}`);
+    console.log(`Server is running on port ${PORT}`);
 });
+ // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTkzZWQxNzdjMjVkM2IxYTBiMjMwZmMiLCJpYXQiOjE3MDQxOTQxMDB9.xL_Mc0QaJ4PdLQJhpnl0iWZ-S-hcfsgBEWfa9tpy934

@@ -38,7 +38,8 @@ const checkUserAuthorization = (req, res, next) => __awaiter(void 0, void 0, voi
                 message: "Task not found",
             });
         }
-        if (task.userId.toString() !== userId) {
+        console.log(task, userId);
+        if (task.userId.toString() !== userId.toString()) {
             return res.status(403).json({
                 isError: true,
                 message: "Unauthorized. You do not have permission to perform this action.",

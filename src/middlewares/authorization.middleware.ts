@@ -31,7 +31,8 @@ export const checkUserAuthorization = async (
 			});
 		}
 
-		if (task.userId.toString() !== userId) {
+		console.log(task,userId);
+		if (task.userId.toString() !== userId.toString()) {
 			return res.status(403).json({
 				isError: true,
 				message:
