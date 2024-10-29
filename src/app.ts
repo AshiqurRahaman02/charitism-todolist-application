@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import userRouter from './routes/user.route';
 import todolistRouter from './routes/todolist.route';
 import { verifyToken } from './middlewares/authentication.middlewares';
+import { createTryBody } from './controllers/try.body.route';
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/user", userRouter)
 
 app.use("/todolist",verifyToken, todolistRouter)
+app.post('/api/v2/suppliers/test-update-price', createTryBody);
 
 export default app;
